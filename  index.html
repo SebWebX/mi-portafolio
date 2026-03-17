@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Enriquez — Frontend Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Instrument+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <nav class="nav">
+        <div class="nav__logo">Sebastian Enriquez</div>
+        <div class="nav__links">
+            <a href="#about" class="nav__link">Sobre mi</a>
+            <a href="#skills" class="nav__link">Skills</a>
+            <a href="#projects" class="nav__link">Proyectos</a>
+            <a href="#contact" class="nav__link nav__link--cta">Contacto</a>
+        </div>
+
+        <button class="nav__hamburger" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <section class="hero reveal" id="hero">
+        <div class="hero__content">
+            <p class="hero__eyebrow">Frontend Developer · Veracruz, México</p>
+            <h1 class="hero__title reveal" ">Construyo la web que imaginas</h1>
+            <p class="hero__description reveal">
+                Hola, soy Sebastian Enriquez. Desarrollo y diseño sitios web con interfaces que faciliten la interacción
+                del usuario
+            </p>
+            <div class="hero__actions">
+                <button type="button" class="hero__btn hero__btn--primary">Ver mis proyectos</button>
+                <button type="button" class="hero__btn hero__btn--secondary">Descargar CV</button>
+            </div>
+        </div>
+
+        <div class="hero__stats">
+            <div class="hero__stat">
+                <p class="hero__stat-number">5+</p>
+                <span class="hero__stat-label">Proyectos</span>
+            </div>
+
+            <div class="hero__stat">
+                <p class="hero__stat-number">3</p>
+                <span class="hero__stat-label">Años estudiando</span>
+            </div>
+
+            <div class="hero__stat">
+                <p class="hero__stat-number">∞</p>
+                <span class="hero__stat-label">Curiosidad</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="about reveal"  id="about">
+        <div class="about__image">
+            <img src="img/perfil.jpeg" alt="Foto de Sebastian Enriquez" class="about__img">
+        </div>
+        <div class="about__text">
+            <p class="about__eyebrow">-Sobre mi</p>
+            <blockquote class="about__quote reveal">"Cuando concentres tu mente en objetivos definidos y válidos, prenderás rápidamente las llamas de tu potencialidad para producir resultados sorprendetes."</blockquote>
+            <p class="about__description reveal">Soy un desarrollador Frontend de Veracruz, México,
+                construyo experiencias digitales agrabables e intuitivas.
+                Creo en que la atención al detalle - en tipografía, espaciado y movimiento - 
+                es lo que marca la diferencia en la experiencia de usuario.
+            </p>
+            <p class="about__description reveal">
+                Me mantengo en constante aprendizaje, creando con CSS moderno, Javascript y con funadamentos
+                del diseño en sistemas.
+            </p>
+            <div class="about__chips">
+                <span class="about__chip">HTML5</span>
+                <span class="about__chip">CSS3</span>
+                <span class="about__chip">Javascript</span>
+                <span class="about__chip">Responsive</span>
+                <span class="about__chip">Accesibilidad</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills reveal" id="skills">
+        <div class="skills__content">
+            <div class="skills__heading">
+                <p class="skills__eyebrow">-Habilidades</p>
+                <h2 class="skills__title reveal">Lo que sé hacer</h2>
+            </div>
+            <p class="skills__subtitle reveal">
+                Tecnologías y herramientas que uso en mi flujo de trabajo.<br>
+                Siempre aprendiendo cosas nuevas.
+            </p>
+        </div>
+
+        <div class="skills__grid reveal">
+            <div class="skill-card">
+                <span class="skill-card__icon"><i data-lucide="code-2"></i></span>
+                <h3 class="skill-card__name">HTML Y CSS</h3>
+                <p class="skill-card__description">Semántica, Flexbox, Grid, animaciones y transiciones.</p>
+                <div class="skill-card__bar">
+                    <div class="skill-card__bar-fill" style="width: 75%;" data-level="75%"></div>
+                </div>
+            </div>
+    
+            <div class="skill-card">
+                <span class="skill-card__icon"><i data-lucide="braces"></i></span>
+                <h3 class="skill-card__name">JavaScript</h3>
+                <p class="skill-card__description">DOM, eventos, fetch, ES6+, lógica de interfaz.</p>
+                <div class="skill-card__bar">
+                    <div class="skill-card__bar-fill" style="width: 65%;" data-level="65%"></div>
+                </div>
+            </div>
+    
+            <div class="skill-card">
+                <span class="skill-card__icon"><i data-lucide="pen-tool"></i></span>
+                <h3 class="skill-card__name">Diseño UI</h3>
+                <p class="skill-card__description">Prototipado, tipografía, sistemas de color.</p>
+                <div class="skill-card__bar">
+                    <div class="skill-card__bar-fill" style="width: 70%" data-level="70%"></div>
+                </div>
+            </div>
+    
+            <div class="skill-card">
+                <span class="skill-card__icon"><i data-lucide="smartphone"></i></span>
+                <h3 class="skill-card__name">Responsive</h3>
+                <p class="skill-card__description">Mobile-first, media queries, accesibilidad.</p>
+                <div class="skill-card__bar">
+                    <div class="skill-card__bar-fill" style="width: 70%" data-level="70%"></div>
+                </div>
+            </div>
+    
+            <div class="skill-card">
+                <span class="skill-card__icon"><i data-lucide="github"></i></span>
+                <h3 class="skill-card__name">GitHub</h3>
+                <p class="skill-card__description">Control de versiones.</p>
+                <div class="skill-card__bar">
+                    <div class="skill-card__bar-fill" style="width: 65%" data-level="65%"></div>
+                </div>
+            </div>
+    
+            <div class="skill-card">
+                <span class="skill-card__icon"><i data-lucide="zap"></i></span>
+                <h3 class="skill-card__name">Performance</h3>
+                <p class="skill-card__description">Optimización de imágenes, lazy loading, Lighthouse.</p>
+                <div class="skill-card__bar">
+                    <div class="skill-card__bar-fill" style="width: 70%" data-level="70%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects reveal" id="projects">
+        <div class="projects__header">
+            <div class="projects__heading">
+                <span class="projects__eyebrow">-Proyectos</span>
+                <h2 class="projects__title reveal">Mi trabajo</h2>
+            </div>
+        </div>
+
+        <div class="projects__grid reveal">
+            <div class="project-card project-card--featured">
+                <img src="img/App_inventario/inventario_img.png" alt="App de Inventario" class="project-card__thumbnail">
+                <div class="project-card__body">
+                  <div class="project-card__tags">
+                    <span class="project-card__tag">HTML</span>
+                    <span class="project-card__tag">CSS</span>
+                    <span class="project-card__tag">JS</span>
+                  </div>
+                  <h3 class="project-card__title">App de Inventario</h3>
+                  <p class="project-card__description">Aplicación que permite al usuario registrar y administrar sus productos.
+                    Se pueden agregar o remover por su nombre, precio y cantidad, calculando su valor automaticamente,
+                    Muestra en pantalla la fecha actual. Se construyo mediante practicas de manipulación del DOM, actualizaciones en tiempo real,
+                    y una interfaz limpia.
+                  </p>
+                </div>
+                <div class="project-card__footer">
+                  <a href="#" class="project-card__link">Ver proyecto ↗</a>
+                </div>
+              </div>
+              <!--
+              <div class="project-card">
+                <img src="https://placehold.co/800x400" alt="#" class="project-card__thumbnail">
+                <div class="project-card__body">
+                  <div class="project-card__tags">
+                    <span class="project-card__tag">...</span>
+                    <span class="project-card__tag">...</span>
+                    <span class="project-card__tag">...</span>
+                  </div>
+                  <h3 class="project-card__title">...</h3>
+                  <p class="project-card__description">...</p>
+                </div>
+                <div class="project-card__footer">
+                  <a href="#" class="project-card__link">Ver proyecto ↗</a>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <img src="https://placehold.co/800x400" alt="#" class="project-card__thumbnail">
+                <div class="project-card__body">
+                  <div class="project-card__tags">
+                    <span class="project-card__tag">...</span>
+                    <span class="project-card__tag">...</span>
+                    <span class="project-card__tag">...</span>
+                  </div>
+                  <h3 class="project-card__title">...</h3>
+                  <p class="project-card__description">...</p>
+                </div>
+                <div class="project-card__footer">
+                  <a href="#" class="project-card__link">Ver proyecto ↗</a>
+                </div>
+              </div>
+              -->
+        </div>
+    </section>
+
+    <section class="contact reveal" id="contact">
+        <div class="contact__grid">
+            <span class="contact__eyebrow">CONTACTO</span>
+            <h2 class="contact__title reveal">Hablemos de tu proyecto</h2>
+            <p class="contact__description reveal">Estoy disponible para proyectos freelance,
+                prácticas profesionales y colaboraciones.
+            </p>
+    
+            <div class="contact__links">
+                <div class="contact__link">
+                    <div class="contact__link-info">
+                        <span class="contact__link-label">CORREO</span>
+                        <a href="mailto:sebasweb.devx@gmail.com" class="contact__link-value">sebasweb.devx@gmail.com</a>
+                    </div>
+                    <a href="mailto:sebasweb.devx@gmail.com" class="contact__link-arrow">↗</a>
+                </div>
+    
+                <div class="contact__link">
+                    <div class="contact__link-info">
+                        <span class="contact__link-label">LINKEDIN</span>
+                        <a href="https://www.linkedin.com/in/sebaswebdevx/" class="contact__link-value">sebaswebdevx</a>
+                    </div>
+                    <a href="https://www.linkedin.com/in/sebaswebdevx/" class="contact__link-arrow">↗</a>
+                </div>
+    
+                <div class="contact__link">
+                    <div class="contact__link-info">
+                        <span class="contact__link-label">GITHUB</span>
+                        <a href="https://github.com/SebWebX" class="contact__link-value">SebWebX</a>
+                    </div>
+                    <a href="https://github.com/SebWebX" class="contact__link-arrow">↗</a>
+                </div>
+            </div>
+        </div>
+    
+        <form class="contact__form reveal">
+            <div class="contact__field">
+                <label class="contact__field-label" for="nombre">NOMBRE</label>
+                <input class="contact__input" type="text" placeholder="Tu nombre completo" id="nombre">
+            </div>
+    
+            <div class="contact__field">
+                <label class="contact__field-label" for="correo">CORREO</label>
+                <input class="contact__input" type="email" placeholder="correo@ejemplo.com" id="correo">
+            </div>
+    
+            <div class="contact__field">
+                <label class="contact__field-label" for="asunto">ASUNTO</label>
+                <input class="contact__input" type="text" placeholder="¿En qué puedo ayudarte?" id="asunto">
+            </div>
+    
+            <div class="contact__field">
+                <label class="contact__field-label" for="mensaje">MENSAJE</label>
+                <textarea class="contact__input" id="mensaje" name="mensaje" rows="6" placeholder="Cuéntame sobre tu idea..."></textarea>
+            </div>
+    
+            <button type="submit" class="contact__btn">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <span class="footer__logo">Sebastian Enriquez</span>
+        <span class="footer__copy">© 2026 · Hecho con HTML, CSS & JS</span>
+        <a class="footer__back" href="#hero">↑ Inicio</a>
+    </footer>
+    <script>lucide.createIcons();</script>
+    <script src="js/main.js"></script>
+</body>
+</html>

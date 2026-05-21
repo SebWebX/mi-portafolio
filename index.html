@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
     <title>Sebastian Enriquez — Frontend Developer</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Instrument+Sans:wght@300;400;500&display=swap"
@@ -32,58 +33,61 @@
     <section class="hero reveal" id="hero">
         <div class="hero__content">
             <p class="hero__eyebrow">Frontend Developer · Veracruz, México</p>
-            <h1 class="hero__title reveal" ">Construyo la web que imaginas</h1>
+            <h1 class="hero__title reveal">Construyo la web que imaginas</h1>
             <p class="hero__description reveal">
                 Hola, soy Sebastian Enriquez. Desarrollo y diseño sitios web con interfaces que faciliten la interacción
                 del usuario
             </p>
             <div class="hero__actions">
                 <a href="#projects"><button type="button" class="hero__btn hero__btn--primary">Ver mis proyectos</button></a>
-                <a href="pdf/CV_SebDevX.pdf" download="CV_SebDevX.pdf"><button type="button" class="hero__btn hero__btn--secondary">Descargar CV</button></a>
+                <a href="pdf/CV_SebDev.pdf" download="CV_SebDevX.pdf"><button type="button" class="hero__btn hero__btn--secondary">Descargar CV</button></a>
             </div>
         </div>
-
-        <div class="hero__stats">
-          <!-- <div class="hero__stat">
-                <p class="hero__stat-number">5+</p>
-                <span class="hero__stat-label">Proyectos</span>
-            </div> -->
-
-            <div class="hero__stat">
-                <p class="hero__stat-number">3</p>
-                <span class="hero__stat-label">Años estudiando</span>
+    
+        <div class="hero__terminal">
+            <div class="hero__terminal-bar">
+                <span class="hero__terminal-dot hero__terminal-dot--red"></span>
+                <span class="hero__terminal-dot hero__terminal-dot--yellow"></span>
+                <span class="hero__terminal-dot hero__terminal-dot--green"></span>
             </div>
-
-            <div class="hero__stat">
-                <p class="hero__stat-number">∞</p>
-                <span class="hero__stat-label">Aprendizaje constante</span>
+            <div class="hero__terminal-body">
+                <p class="hero__terminal-line"><span class="hero__terminal-prompt">~</span> whoami</p>
+                <p class="hero__terminal-output">Sebastian Enriquez</p>
+                <p class="hero__terminal-line"><span class="hero__terminal-prompt">~</span>ls skills/</p>
+                <p class="hero__terminal-output hero__terminal-output--teal">HTML · CSS · JavaScript</p>
+                <p class="hero__terminal-output hero__terminal-output--teal">Angular · TypeScript</p>
+                <p class="hero__terminal-line"><span class="hero__terminal-prompt">~</span>cat status.txt</p>
+                <p class="hero__terminal-output hero__terminal-output--green">Disponible ✓</p>
+                <p class="hero__terminal-line"><span class="hero__terminal-prompt">~</span> <span class="hero__terminal-cursor">_</span></p>
             </div>
         </div>
     </section>
 
     <section class="about reveal"  id="about">
         <div class="about__image">
-            <img src="img/perfil.jpeg" alt="Foto de Sebastian Enriquez" class="about__img">
+            <img src="img/herophoto.jpg" alt="Foto de Sebastian Enriquez" class="about__img">
         </div>
         <div class="about__text">
-            <p class="about__eyebrow">-Sobre mi</p>
+            <p class="about__eyebrow">Sobre mi</p>
             <blockquote class="about__quote reveal">"Cuando concentres tu mente en objetivos definidos y válidos, prenderás rápidamente las llamas de tu potencialidad para producir resultados sorprendentes."</blockquote>
             <p class="about__description reveal">Soy un desarrollador Frontend de Veracruz, México,
-                construyo experiencias digitales agrabables e intuitivas.
+                construyo experiencias digitales agradables e intuitivas.
                 Creo en que la atención al detalle - en tipografía, espaciado y movimiento - 
                 es lo que marca la diferencia en la experiencia de usuario.
             </p>
             <p class="about__description reveal">
-                Me mantengo en constante aprendizaje, creando con CSS moderno, Javascript y con funadamentos
+                Me mantengo en constante aprendizaje, creando con CSS moderno, Javascript y con fundamentos
                 del diseño en sistemas.
             </p>
-            <div class="about__chips">
+            <!--<div class="about__chips">
                 <span class="about__chip">HTML5</span>
                 <span class="about__chip">CSS3</span>
                 <span class="about__chip">Javascript</span>
+                <span class="about__chip">Typescript</span>
+                <span class="about__chip">Angular</span>
                 <span class="about__chip">Responsive</span>
                 <span class="about__chip">Accesibilidad</span>
-            </div>
+            </div>-->
         </div>
     </section>
 
@@ -103,55 +107,55 @@
             <div class="skill-card">
                 <span class="skill-card__icon"><i data-lucide="code-2"></i></span>
                 <h3 class="skill-card__name">HTML Y CSS</h3>
-                <p class="skill-card__description">Semántica, Flexbox, Grid, animaciones y transiciones.</p>
-                <div class="skill-card__bar">
-                    <div class="skill-card__bar-fill" style="width: 75%;" data-level="75%"></div>
-                </div>
+                <p class="skill-card__description">Semántica, accesibilidad, Flexbox, Grid, animaciones y transiciones.</p>
             </div>
     
             <div class="skill-card">
                 <span class="skill-card__icon"><i data-lucide="braces"></i></span>
                 <h3 class="skill-card__name">JavaScript</h3>
                 <p class="skill-card__description">DOM, eventos, fetch, ES6+, lógica de interfaz.</p>
-                <div class="skill-card__bar">
-                    <div class="skill-card__bar-fill" style="width: 65%;" data-level="65%"></div>
-                </div>
+            </div>
+
+            <div class="skill-card">
+                <span class="skill-card__icon"><i data-lucide="file-type2"></i></span>
+                <h3 class="skill-card__name">Typescript</h3>
+                <p class="skill-card__description">Tipado estático, interfaces y tipos para desarrollo más robusto y mantenible.</p>
+            </div>
+
+            <div class="skill-card">
+                <span class="skill-card__icon"><i data-lucide="triangle"></i></span>
+                <h3 class="skill-card__name">Angular</h3>
+                <p class="skill-card__description">Componentes, módulos, servicios y data binding para aplicaciones web escalables.</p>
+            </div>
+
+            <div class="skill-card">
+                <span class="skill-card__icon"><i data-lucide="globe"></i></span>
+                <h3 class="skill-card__name">APIs REST</h3>
+                <p class="skill-card__description">Consumo de APIs con fetch, manejo de JSON y datos asíncronos.</p>
             </div>
     
             <div class="skill-card">
                 <span class="skill-card__icon"><i data-lucide="pen-tool"></i></span>
                 <h3 class="skill-card__name">Diseño UI</h3>
                 <p class="skill-card__description">Prototipado, tipografía, sistemas de color.</p>
-                <div class="skill-card__bar">
-                    <div class="skill-card__bar-fill" style="width: 70%" data-level="70%"></div>
-                </div>
             </div>
     
             <div class="skill-card">
                 <span class="skill-card__icon"><i data-lucide="smartphone"></i></span>
                 <h3 class="skill-card__name">Responsive</h3>
                 <p class="skill-card__description">Mobile-first, media queries, accesibilidad.</p>
-                <div class="skill-card__bar">
-                    <div class="skill-card__bar-fill" style="width: 70%" data-level="70%"></div>
-                </div>
             </div>
     
             <div class="skill-card">
-                <span class="skill-card__icon"><i data-lucide="github"></i></span>
-                <h3 class="skill-card__name">GitHub</h3>
+                <span class="skill-card__icon"><i data-lucide="git-branch"></i></span>
+                <h3 class="skill-card__name">Git/GitHub</h3>
                 <p class="skill-card__description">Control de versiones.</p>
-                <div class="skill-card__bar">
-                    <div class="skill-card__bar-fill" style="width: 65%" data-level="65%"></div>
-                </div>
             </div>
     
             <div class="skill-card">
                 <span class="skill-card__icon"><i data-lucide="zap"></i></span>
                 <h3 class="skill-card__name">Performance</h3>
                 <p class="skill-card__description">Optimización de imágenes, lazy loading, Lighthouse.</p>
-                <div class="skill-card__bar">
-                    <div class="skill-card__bar-fill" style="width: 70%" data-level="70%"></div>
-                </div>
             </div>
         </div>
     </section>
@@ -186,7 +190,7 @@
               </div>
               
               <div class="project-card">
-                <img src="img/App_dashboard/dashboard_img.png" alt="#" class="project-card__thumbnail">
+                <img src="img/App_dashboard/dashboard_img.png" alt="App dashboard" class="project-card__thumbnail">
                 <div class="project-card__body">
                   <div class="project-card__tags">
                     <span class="project-card__tag">HTML</span>
